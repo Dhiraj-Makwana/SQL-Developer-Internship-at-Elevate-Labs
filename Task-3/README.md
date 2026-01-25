@@ -1,7 +1,5 @@
 # Task 3: Filtering Data Using WHERE, AND, OR, LIKE
 
----
-
 ## 📖 Task Objective
 
 The objective of this task is to **practice and understand advanced data filtering techniques in SQL** using the `WHERE` clause along with logical operators and pattern matching.  
