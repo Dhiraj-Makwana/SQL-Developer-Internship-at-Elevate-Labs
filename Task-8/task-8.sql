@@ -35,3 +35,16 @@ SELECT first_name, last_name, department_name
 FROM employees
 RIGHT JOIN departments
 ON employees.department_id = departments.department_id;
+
+-- FUll JOIN Implement using UNION
+SELECT e.employee_id, e.first_name, d.department_name
+FROM employees e
+LEFT JOIN departments d
+ON e.department_id = d.department_id
+
+UNION
+
+SELECT e.employee_id, e.first_name, d.department_name
+FROM employees e
+RIGHT JOIN departments d
+ON e.department_id = d.department_id;
