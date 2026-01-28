@@ -223,3 +223,64 @@ Pagination = faster + cleaner data display
 - Deletes all rows from the table
 - Causes data loss
 - Cannot be undone easily
+
+---
+
+# ✅Task-7: Table Relationships & Foreign Keys
+## 1️⃣ What is a `foreign key`?
+- A foreign key is a column that references the primary key of another table
+- It creates a relationship between tables
+
+## 2️⃣ Difference between `primary key` and `foreign key`?
+- **Primary Key**
+  - Uniquely identifies a row
+  - Cannot be `NULL`
+  - One per table
+
+- **Foreign Key**
+  - Refers to primary key of another table
+  - Can repeat values
+  - Can exist multiple times in a table
+
+## 3️⃣ What is referential integrity?
+- Ensures valid relationships between tables
+- Prevents invalid data (like orphan records)
+  - **👉 Example idea:**
+  `Employee must belong to an existing department`
+
+## 4️⃣ What does `ON DELETE CASCADE` do?
+- Automatically deletes child records
+- When the parent record is deleted
+  - **👉 Example idea:**
+  `Delete department → delete its employees`
+
+## 5️⃣ Can a foreign key accept `NULL` values?
+- Yes, if the column is not defined as `NOT NULL`
+- `NULL` means no relationship
+
+---
+
+# ✅Task-8: Mastering INNER, LEFT, RIGHT & FULL JOINS
+## 1️⃣ Difference between `INNER JOIN` and `LEFT JOIN`?
+- `INNER JOIN` → returns **only matching rows** from both tables
+- `LEFT JOIN` → returns **all rows from left table** + matching rows from right table
+
+## 2️⃣ When do we use FULL JOIN?
+- When we need **all records from both tables**
+- Matching and non-matching rows from both sides
+
+## 3️⃣ Why does MySQL not support `FULL JOIN`?
+- MySQL focuses on **performance & simplicity**
+- `FULL JOIN` can be simulated using:
+  - `LEFT JOIN`
+  - `RIGHT JOIN`
+  - `UNION`
+
+## 4️⃣ What happens if join condition is wrong?
+- Returns **incorrect or duplicated data**
+- Can cause **cartesian product**
+- Leads to **wrong results and slow queries**
+
+## 5️⃣ Real-world use case of `LEFT JOIN`?
+- Show all users even if they have no orders
+- Show all departments even if no employees
