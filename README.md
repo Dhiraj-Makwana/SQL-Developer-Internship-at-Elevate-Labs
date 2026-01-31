@@ -284,3 +284,62 @@ Pagination = faster + cleaner data display
 ## 5️⃣ Real-world use case of `LEFT JOIN`?
 - Show all users even if they have no orders
 - Show all departments even if no employees
+
+---
+
+# ✅Task-9: Writing Subqueries (Nested Queries)
+## 1️⃣ What is a subquery?
+- A **subquery** is a query written **inside another query**
+- It's **result** is **used** by the **main query**
+
+## 2️⃣ Difference between correlated and non-correlated subqueries?
+- **Non-correlated subquery**
+  - Runs once
+  - Independent of outer query
+- **Correlated subquery**
+  - Runs **for each row**
+  - Depends on outer query
+
+## 3️⃣ Can subqueries return multiple rows?
+- `Yes`
+- Use operators like `IN`, `ANY`, `ALL`
+- Single-value subqueries use `=`
+
+## 4️⃣ Subquery vs JOIN – which is better?
+- `JOIN` → usually **faster** and more readable
+- Subquery → useful when **logic** is **complex** or **unavoidable**
+
+## 5️⃣ Where are subqueries commonly used?
+- In `WHERE` clause **(filtering)**
+- In `FROM` clause **(derived tables)**
+- In `SELECT` clause **(calculations)**
+
+---
+
+# ✅Task-10: Creating and Using SQL Views
+## 1️⃣ What is a SQL view?
+- A `SQL view` is a virtual table
+- Created using a stored `SELECT` query
+
+## 2️⃣ Difference between view and table?
+- **Table**
+  - Stores data physically
+
+- **View**
+  - Stores only the query
+  - Data comes from base tables
+
+## 3️⃣ Are views stored physically?
+- **No**
+- Only the query definition is stored
+- Data is fetched when the view is queried
+
+## 4️⃣ Can we update data through a view?
+- Yes, but only if:
+  - View is based on single table
+  - No `JOIN`, `GROUP BY`, or aggregates
+
+## 5️⃣ Why are views used in enterprises?
+- Improve **security** (hide sensitive columns)
+- Simplify **complex queries**
+- Reusable and easy for reporting
