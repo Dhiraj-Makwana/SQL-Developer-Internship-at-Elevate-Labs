@@ -13,15 +13,12 @@ CREATE TABLE students (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 			   ON UPDATE CURRENT_TIMESTAMP
 );
+DESCRIBE students;
 
 INSERT INTO students
-(first_name, last_name, email, mobile_number, date_of_birth, gender, enrollment_date)
+(first_name, last_name, email, phone_number, date_of_birth, gender, enrollment_date)
 VALUES
-('Dhiraj', 'Makwana', 'dhirajmakwana33912', '8238164813', '2005-05-26', 'Male', '2022-09-08');
-
-INSERT INTO students
-(first_name, last_name, email, mobile_number, date_of_birth, gender, enrollment_date)
-VALUES
+('Dhiraj', 'Makwana', 'dhirajmakwana33912', '8238164813', '2005-05-26', 'Male', '2022-09-08'),
 ('Rishi', 'Patel', 'rishipatel22', '5463712343', '2005-05-22', 'Male', '2022-09-01'),
 ('Neel', 'Patel', 'neelpatel23', '1233712343', '2005-03-21', 'Male', '2022-09-01'),
 ('Urval', 'Vaghani', 'urvalvaghani54', '5466782343', '2005-07-13', 'Male', '2022-09-05'),
@@ -35,13 +32,12 @@ INSERT INTO students (first_name, last_name, email)
 VALUES (NULL, 'Patel', 'aman@gmail.com');
 
 SELECT * FROM students;
-DESCRIBE students;
 
 ALTER TABLE students
 ADD is_active BOOLEAN DEFAULT TRUE;
 
 ALTER TABLE students
-CHANGE mobile_number mobile_number VARCHAR(10);
+CHANGE phone_number mobile_number VARCHAR(10);
 
 ALTER TABLE students
 DROP COLUMN gender;

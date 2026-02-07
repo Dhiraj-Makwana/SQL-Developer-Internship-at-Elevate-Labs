@@ -46,8 +46,16 @@ The objective is to design a well-structured `students` table, enforce data inte
 
 ---
 
-## 📜 SQL Implementation
+## 📸 Screenshots
 
-### 1️⃣ Database Selection
-```sql
-USE intern_training_db;
+### 1️⃣ Create student Table
+
+![Query-1](./Screenshots/1.%20Create_Student_Table.png)
+
+### 2️⃣ Insert data into students Table
+
+![Query-2](./Screenshots/2.%20Insert_students_data.png)
+
+### 3️⃣ Change and Delete Column name
+
+![Query-3](./Screenshots/3.%20change_Delete_column_name.png)
