@@ -8,6 +8,8 @@ CREATE TABLE students (
   age INT
 );
 
+DESCRIBE students;
+
 INSERT INTO students
 (id, name, email, age)
 VALUES
