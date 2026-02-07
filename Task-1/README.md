@@ -31,6 +31,20 @@
 - **IN:** 
     Matches values from a list
 
+---
+## 📸 SCREENSHOTS
+
+### 1️⃣ Create Student Table
+![Query-1 Screenshot](./ScreenShots/1.%20Create_Student_Table.png)
+
+### 2️⃣ Insert Students Data
+![Query-2 Screenshot](./ScreenShots/2.%20Insert_Students_Data.png)
+
+### 3️⃣ Select multiple students using IN
+![Query-3 Screenshot](./ScreenShots/3.%20SELECT_Multiple_Students_Using_IN.png)
+
+---
+
 ## Today's Learnings:
 
 - Setup MySQL workbench + Community server
